@@ -13,13 +13,15 @@
 
         <!-- Styles -->
         <style>
+        :root {
+            --primary: {{$settings->primary_color}};
+            --white: #ffffff;
+        }
         </style>
 
-        <style>
-        </style>
     </head>
     <body class="antialiased justify-content-center d-grid pb-5">
-        <img class="jusitfy-self-center" src="{{asset('logo.jpeg')}}"/>
+        <img class="jusitfy-self-center" src="{{$settings->logo}}"/>
         <div class="row mx-0 justify-content-center text-align-end" style="width: 100vw;">
             @if($message)
             <h1 class="text-primary mt-5">{{$message}}</h1>

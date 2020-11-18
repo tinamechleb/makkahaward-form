@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', ['message' => '']);
+    $settings = DB::table('settings')->first();
+    return view('welcome', ['message' => '', 'settings' => $settings]);
 });
 
 Route::post('/apply', 'App\Http\Controllers\NominationController@store')->name('apply');

@@ -1,7 +1,4 @@
-:root {
-    --primary: #630c0d;
-    --white: #ffffff;
-}
+
 @font-face {
     font-family: 'FrutigerLTArabic45Light';
     src: url('../fonts/FrutigerLTArabic45Light.ttf');
