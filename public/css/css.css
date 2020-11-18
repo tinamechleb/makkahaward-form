@@ -1,0 +1,70 @@
+:root {
+    --primary: #630c0d;
+    --white: #ffffff;
+}
+@font-face {
+    font-family: 'FrutigerLTArabic45Light';
+    src: url('../fonts/FrutigerLTArabic45Light.ttf');
+}
+body {
+    font-family: 'FrutigerLTArabic45Light';
+    font-size: 1rem;
+    background-color: #fff;
+}
+.text-align-end {
+    text-align: end !important;
+}
+.text-align-center {
+    text-align: center !important;
+}
+.d-grid {
+    display: grid;
+}
+.jusitfy-self-center {
+    justify-self: center;
+}
+.text-primary {
+    color: var(--primary)!important;
+    font-family: 'FrutigerLTArabic45Light';
+}
+.btn-primary {
+    background-color: var(--primary)!important;
+    border: 1px solid var(--primary)!important;
+    text-align: center;
+    padding: 10px;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+input, textarea {
+    border-radius: 4px;
+    min-height: 40px;
+    text-align: right;
+	background-color: #dfdfdf;
+    border: 2px solid transparent;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+input:focus, textarea:focus {
+    border-color: var(--primary);
+	color: #000;
+	background: #fff;
+	outline: 0
+}
+input[type="radio"] {
+    min-height: 30px;
+}
+*:focus {
+    outline: none;
+}
+label {
+    cursor: pointer;
+}
+.h5,h5{
+    font-size:1.25rem;
+    font-family: 'FrutigerLTArabic45Light';
+}
