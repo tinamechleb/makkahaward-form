@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Nomination;
-use App\Settings;
+use App\Setting;
 
 class NominationController extends Controller
 {
@@ -16,6 +16,6 @@ class NominationController extends Controller
             'سبب_الترشح' => $request->سبب_الترشح,
         ]);
         $settings = Setting::first();
-        return view('welcome', ['message'=> 'شكرا على ترشيحك، سنعاود الاتصال بك قريبا', 'settings' => $settings]);
+        return view('welcome', ['message'=> $settings->thank_you_message, 'settings' => $settings]);
     }
 }
