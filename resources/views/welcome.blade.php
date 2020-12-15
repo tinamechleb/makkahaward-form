@@ -13,10 +13,10 @@
 
         <!-- Styles -->
         <style>
-        :root {
-            --primary: {{$settings->primary_color}};
-            --white: #ffffff;
-        }
+            :root {
+                --primary: {{$settings->primary_color}};
+                --white: #ffffff;
+            }
         </style>
 
     </head>
@@ -72,7 +72,7 @@
                 </div>
                 <label class="col-12 px-0 h5 mt-4" for="reason"><span class="text-primary">*</span> سبب الترشح</label>
                 <textarea class="col-12" name="سبب_الترشح" id="reason" required></textarea>
-                <input class="col-3 text-white btn-primary mt-4 h5" type="submit" value="ارسال"/>
+                <input class="col-3 text-black btn-primary mt-4 h5" type="submit" value="ارسال"/>
             </form>
             @endif
         </div>

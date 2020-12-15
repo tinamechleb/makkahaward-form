@@ -3,8 +3,17 @@
     font-family: 'FrutigerLTArabic45Light';
     src: url('../fonts/FrutigerLTArabic45Light.ttf');
 }
+@font-face {
+    font-family: "GESSLight";
+    src: url("../fonts/GESSTextLight.ttf");
+}
+
+@font-face {
+    font-family: "GESSBold";
+    src: url("../fonts/GESSTextBold.otf");
+}
 body {
-    font-family: 'FrutigerLTArabic45Light';
+    font-family: 'GESSLight';
     font-size: 1rem;
     background-color: #fff;
 }
@@ -22,7 +31,7 @@ body {
 }
 .text-primary {
     color: var(--primary)!important;
-    font-family: 'FrutigerLTArabic45Light';
+    font-family: 'GESSLight';
 }
 .btn-primary {
     background-color: var(--primary)!important;
@@ -35,16 +44,15 @@ body {
     transition: 0.4s;
 }
 input, textarea {
-    border-radius: 4px;
-    min-height: 40px;
-    text-align: right;
-	background-color: #dfdfdf;
-    border: 2px solid transparent;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
     -webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
-    transition: all .2s ease-out
+    transition: all .2s ease-out;
+    font-size: 1rem !important;
+    direction: rtl;
 }
 input:focus, textarea:focus {
     border-color: var(--primary);
@@ -63,5 +71,5 @@ label {
 }
 .h5,h5{
     font-size:1.25rem;
-    font-family: 'FrutigerLTArabic45Light';
+    font-family: 'GESSLight';
 }
