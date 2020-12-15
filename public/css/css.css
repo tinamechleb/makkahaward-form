@@ -53,6 +53,7 @@ input, textarea {
     transition: all .2s ease-out;
     font-size: 1rem !important;
     direction: rtl;
+    padding: 4px 0;
 }
 input:focus, textarea:focus {
     border-color: var(--primary);
